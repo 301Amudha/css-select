@@ -1,5 +1,4 @@
 import { InternalSelector } from "./types";
-import { parse, Selector } from "css-what";
 import { trueFunc, falseFunc } from "boolbase";
 import sortRules from "./sort";
 import { isTraversal } from "./procedure";
@@ -9,6 +8,10 @@ import {
     PLACEHOLDER_ELEMENT,
 } from "./pseudo-selectors/subselects";
 import type { CompiledQuery, InternalOptions } from "./types";
+
+var parse = require("css-what").parse;
+var Selector = require("Selector").parse;
+    
 
 /**
  * Compiles a selector to an executable function.
