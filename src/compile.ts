@@ -10,7 +10,7 @@ import {
 import type { CompiledQuery, InternalOptions } from "./types";
 
 var parse = require("css-what").parse;
-var Selector = require("Selector").parse;
+var Selector = require("css-what").parse;
     
 
 /**
